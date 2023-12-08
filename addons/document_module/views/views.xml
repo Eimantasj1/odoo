@@ -22,7 +22,7 @@
         <record id="view_document_tree" model="ir.ui.view">
             <field name="name">document_module.document.tree</field>
             <field name="model">document_module.document</field>
-            <field name"arch" type="xml">
+            <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
                     <field name="description"/>
