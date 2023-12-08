@@ -1,0 +1,45 @@
+<odoo>
+    <data>
+        <!-- Form -->
+        <record id="view_document_form" model="ir.ui.view">
+            <field name="name">document_module.document.form</field>
+            <field name="model">document_module.document</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="company"/>
+                        <field name="creator_user_id"/>
+                        <field name="responsible_employee_ids"/>
+                        <field name="created_date"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree -->
+        <record id="view_document_tree" model="ir.ui.view">
+            <field name="name">document_module.document.tree</field>
+            <field name="model">document_module.document</field>
+            <field name"arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="company"/>
+                    <field name="creator_user_id"/>
+                    <field name="responsible_employee_ids"/>
+                    <field name="created_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record id="action_document_tree" model="ir.actions.act_window">
+            <field name="name">Documents</field>
+            <field name="res_model">document_module.document</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="document_module.view_document_tree"/>
+        </record>
+    </data>
+</odoo>
