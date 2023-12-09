@@ -9,13 +9,16 @@ Module for storing information about documents or books.
     'website': "https://www.yourcompany.com",
     'category': 'Uncategorized',
     'depends': ['base'],
-    'module_type': 'official',
+    'application': True,
     'data': [
-        # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
+        'views/actions.xml',
+        'data/ir.model.access.csv',
     ],
     'demo': [
         'demo/demo.xml',
     ],
+    'installable': True,
+    'auto_install': False,
 }
