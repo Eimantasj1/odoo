@@ -1,16 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <!-- Action -->
         <record id="action_document_tree" model="ir.actions.act_window">
             <field name="name">Documents</field>
             <field name="res_model">document_module.document</field>
-            <field name="view_mode">form</field>
+            <field name="view_mode">tree,form</field>
             <field name="view_id" ref="document_module.view_document_tree"/>
-            <!--<field name="sequence" type="100"/>-->
-            <field name="groups_id" eval="[(6, 0, [ref('base.group_user')])]"/>
         </record>
-
     </data>
 </odoo>

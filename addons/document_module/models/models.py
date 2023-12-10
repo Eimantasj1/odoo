@@ -12,10 +12,12 @@ class Document(models.Model):
     created_date = fields.Date(string='Created Date', default=fields.Date.today)
 
     # Action
-    action_view = {
-        'name': 'Document Tree View',
-        'type': 'ir.actions.act_window',
-        'view_mode': 'tree,form',
-        'res_model': 'document_module.document',
-        'view_id': False,
-    }
+    def action_open_document_tree_view(self):
+        return {
+            'name': 'Documents',
+            'type': 'ir.actions.act_window',
+            'view_mode': 'tree,form',
+            'res_model': 'document_module.document',
+            'view_id': False,
+            'target': 'current',
+        }

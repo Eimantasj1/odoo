@@ -1,8 +1,7 @@
 <odoo>
     <data>
-
         <!-- Form -->
-            <record id="view_document_form" model="ir.ui.view">
+        <record id="view_document_form" model="ir.ui.view">
             <field name="name">document_module.document.form</field>
             <field name="model">document_module.document</field>
             <field name="arch" type="xml">
@@ -42,13 +41,5 @@
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="document_module.view_document_tree"/>
         </record>
-
-        <!-- Menu Action -->
-        <record id="menu_action_document" model="ir.ui.menu">
-            <field name="name">Documents</field>
-            <field name="action" ref="document_module.action_document_tree"/>
-            <!--<field name="sequence" type="100"/>-->
-        </record>
-
     </data>
 </odoo>

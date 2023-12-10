@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_document_module_document_module,document_module.document_module,model_document_module_document_module,base.group_user,1,1,1,1
+access_document_document,Document User Rights,model_document_document,base.group_user,1,1,1,0
