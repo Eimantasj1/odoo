@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_document_module_document_module,document_module.document_module,model_document_module_document_module,base.group_user,1,1,1,1
+document_module.access_document_module_document,access_document_module_document,document_module.model_document_module_document,base.group_user,1,0,0,0
+access_document_module_wizard,Access Document Wizard,model_document_module_wizard,base.group_user,1,1,1,1
+document_module.access_document_module_document_user,Access Document User,model_document_module_document,base.group_user,1,0,0,0
+document_module.access_document_module_document_admin,Access Document Admin,model_document_module_document,base.group_system,1,1,1,1

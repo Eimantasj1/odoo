@@ -1,0 +1,8 @@
+<odoo>
+    <data>
+        <menuitem id="menu_document" name="Documents" sequence="10"/>
+        <menuitem id="menu_document_tree" name="Document Tree" parent="menu_document" action="document_module.action_document_tree"/>
+        <!--wizard-->
+        <menuitem id="menu_document_wizard" name="Document Wizard" parent="menu_document" action="document_module.action_document_wizard"/>
+    </data>
+</odoo>

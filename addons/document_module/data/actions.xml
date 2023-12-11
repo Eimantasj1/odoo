@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <!-- Action -->
+        <record id="action_document_tree" model="ir.actions.act_window">
+            <field name="name">Documents</field>
+            <field name="res_model">document_module.document</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="document_module.view_document_tree"/>
+        </record>
+        <!--wizard-->
+        <record id="action_document_wizard" model="ir.actions.act_window">
+            <field name="name">Document Wizard</field>
+            <field name="res_model">document_module.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="document_module.view_document_wizard_form"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
