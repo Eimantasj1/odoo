@@ -8,6 +8,7 @@ Module for storing information about documents or books.
     'author': "Eimantas",
     'website': "https://www.yourcompany.com",
     'category': 'Uncategorized',
+    'license': 'LGPL-3',
     'depends': [
         'base',
     ],
