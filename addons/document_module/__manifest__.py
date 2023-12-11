@@ -13,9 +13,8 @@ Module for storing information about documents or books.
     ],
     'data': [
         'views/views.xml',
-        #'views/wizard_views.xml',
         'data/actions.xml',
-        'data/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'data/menu_views.xml'
     ],
     'demo': [
